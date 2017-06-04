@@ -1,0 +1,36 @@
+﻿@model ASP.NETMVCExample1.Models.Employee
+@{
+    ViewBag.Title = "EmployeeDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <h2>EmployeeDetails</h2>
+            <table class="table table-bordered">
+                <tr>
+                    <td>ID:</td>
+                    <td>@Model.ID</td>
+                </tr>
+                <tr>
+                    <td>Name:</td>
+                    <td>@Model.NAME</td>
+                </tr>
+                <tr>
+                    <td>City:</td>
+                    <td>@Model.CITY</td>
+                </tr>
+                <tr>
+                    <td>State:</td>
+                    <td>@Model.STATE</td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+</div>
+
